@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LP Podcast</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <!--Este fragmento es lo único del html que no puedes tocar-->
+  <svg style="display:none;">
+    <symbol id="icon--play" viewBox="0 0 32 32">
+      <g>
+        <path d="M16,0C7.178,0,0,7.178,0,16s7.178,16,16,16s16-7.178,16-16S24.822,0,16,0z M16,31C7.729,31,1,24.271,1,16
+      S7.729,1,16,1s15,6.729,15,15S24.271,31,16,31z" />
+        <path d="M19.609,14.802L14.316,10.8c-0.263-0.197-0.567-0.302-0.88-0.302C12.631,10.498,12,11.158,12,12v8
+   c0,0.842,0.635,1.502,1.445,1.502c0.313,0,0.619-0.104,0.885-0.304l5.258-3.998c0.382-0.287,0.611-0.742,0.611-1.218
+   C20.198,15.512,19.983,15.081,19.609,14.802z M18.985,16.401l-5.258,3.998C13.434,20.622,13,20.453,13,20v-8
+   c0-0.326,0.225-0.502,0.437-0.502c0.096,0,0.19,0.034,0.279,0.101l5.293,4.002c0.165,0.123,0.19,0.292,0.19,0.382
+   C19.198,16.147,19.122,16.3,18.985,16.401z" />
+      </g>
+    </symbol>
+  </svg>
+  <!--Fin svg-->
+  <header>
+    <nav class="menu">
+      <a href="#" class="logo">
+        <img src="./assets/img/logo-podcast.png" alt="logo"><a>
+          <ul>
+            <li><a class="menu__item" href="#nosotros">Nosotros</a></li>
+            <li><a class="menu__item" href="#podcast">Podcast</a></li>
+            <li><a class="menu__item" href="#contacta">Contacta</a></li>
+          </ul>
+    </nav>
+    <section id="portada">
+      <h1></h1>
+      <h2>
+        <span>BIENVENIDO</span>
+        <span>A MI </span>
+        <span>NUEVO</span>
+        <span>PODCAST</span>
+      </h2>
+      <a class="btn" onclick="window.subscribete.showModal()">SUBSCRIBETE</a>
+    </section>
+  </header>
+  <main>
+    <section id="nosotros">
+      <!-- <ul class="perfil">
+        <li> -->
+          <figure>
+            <img src="./assets/img/Vaquero.png">
+            <figcaption>J.J. Baquero</figcaption>
+          </figure>
+          <figure>
+            <img src="./assets/img/Fontecha.png">
+            <figcaption>Dani Fontecha</figcaption>
+          </figure>
+      
+      <div class="descripcion">
+        <h2>Nosotros</h2>
+        <p>Somos J. J. Vaquero y Dani Fontecha creadores de Humor Al Aire, un podcast de improvisación cómica en el
+          que los oyentes pueden participar.
+        </p>
+        <a class="btn" href="#video"> CONÓCENOS</a>
+        <video controls id="video">
+          <source src="./assets/videos/video" type="">
+        </video>
+      </div>
+    </section>
+    <section id="podcast">
+      <h2>Podcast más recientes</h2>
+      <ul class="cards">
+        <li class="card__item">
+          <figure><img src="./assets/img/logo-podcast.png"></figure>
+          <h3>Humor al aire #100</h3>
+          <p>Humorista visitante Berto</p>
+          <svg>
+            <use href="#icon--play"></use>
+          </svg>
+        </li>
+        <li class="card__item">
+          <figure><img src="./assets/img/logo-podcast.png"></figure>
+          <h3>Humor al aire #99</h3>
+          <svg>
+            <use href="#icon--play"></use>
+          </svg>
+        </li>
+        <li class="card__item">
+          <figure><img src="./assets/img/logo-podcast.png" alt=""></figure>
+          <h3>Humor al aire #88</h3>
+          <svg>
+            <use href="#icon--play"></use>
+          </svg>
+        </li>
+        <li class="card__item">
+          <figure><img src="./assets/img/logo-podcast.png"></figure>
+          <h3>Humor al aire #86</h3>
+          <svg>
+            <use href="#icon--play"></use>
+          </svg>
+
+        </li>
+      </ul>
+    </section>
+    <section id="contacta">
+      <h2>Contacta</h2>
+      <form>
+        <fieldset class="datos">
+          <legend>Datos del usuario</legend>
+          <label for="name">Nombre</label>
+          <input name="name" id="name" type="text" placeholder="Maria Jose" pattern="[a-zA-ZáéíóúàèìòùüÁÉÍÓÚÈÌÒÙÚÇçñÑ\- ]{3,15}" required>
+          <label for="email">email</label>
+          <input name="email" id="email" type="email" placeholder="Maria Jose" required>
+        </fieldset>
+        <fieldset class="mensaje">
+          <legend>Mensaje</legend>
+          <label for="mensaje">Mensaje</label>
+          <textarea name="mensaje" id="mensaje">Proporciona...</textarea>
+        </fieldset>
+        <input type="submit" class="btn" value="Subscribete">
+      </form>
+    </section>
+  </main>
+  <footer class="footer">
+    <p class="derechos">
+      <figure class="logo"><img src="./assets/img/logo-podcast.png" alt="logo"></figure>
+      <span>2026 &copy; Ruben Barbeito Rial</span>
+    </p>
+    <ul class="redes">
+      <li>
+        <a href="" aria-label="enlace a facebook"><img src="./assets/img/iconos/facebook-brands-solid-full.svg"
+            alt="facebook"></a>
+      </li>
+      <li>
+        <a> <img src="./assets/img/iconos/instagram-brands-solid-full.svg"></a>
+      </li>
+      <li>
+        <a><img src="./assets/img/iconos/x-twitter-brands-solid-full.svg" alt="">
+      </li>
+    </ul>
+
+
+  </footer>
+
+  <dialog id="subscribete">
+    <section>
+      <a onclick="window.subscribete.close()">X</a>
+      <h2>Subscribete</h2>
+      <form>
+        <label for="names">Nombre</label>
+        <input name="name" id="names" type="text" placeholder="Maria Jose" required>
+        <label for="email">Email</label>
+        <input name="email" id="email" type="email" placeholder="mjose@correo.com" required>
+      </form>
+    </section>
+  </dialog>
+
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+/**
+ *
+ * Estilos para las ventanas modales
+ *
+ * Autor:
+ *
+ * Fecha:
+ *
+ */
+
+ dialog{
+    width: 500px;
+    height: 500px;
+    border: 3px solid var(--color-secundario);
+    background-color: black;
+    transform: translateX(50%) translateY(50%);
+  }
+
+  dialog section{
+    color: white;
+  }
+  dialog form{
+    color:var(--color-secundario);
+  }
